@@ -1,6 +1,6 @@
 ```
 docker build -t inn .
-docker run --rm -t -p119:119  -p563:563 inn
+docker run --rm -t -p119:119 -p563:563 inn
 -- or --
 docker run --rm -t -p119:119 -p563:563 greenbender/inn
 ```
