@@ -20,7 +20,7 @@ RUN apk add --no-cache \
 ENV PERL_MM_USE_DEFAULT=1
 RUN cpan -T GD MIME::Parser
 
-ARG VERSION=2.7.2
+ARG VERSION=2.7.4
 RUN curl -sL https://github.com/InterNetNews/inn/releases/download/${VERSION}/inn-${VERSION}.tar.gz | tar xz
 
 RUN usermod -d /usr/local/news news
