@@ -13,6 +13,7 @@ RUN apk add --no-cache \
     perl-dev \
     perl-utils \
     shadow \
+    su-exec \
     tar \ 
     tini \
     zlib-dev
@@ -45,5 +46,4 @@ CMD ["-f"]
 
 ENV PATH=/usr/local/news/bin:$PATH
 VOLUME /usr/local/news/db
-USER news
 EXPOSE 119
