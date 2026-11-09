@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  inn-server-a:
+    image: greenbender/inn
+    hostname: inn-server-a
+    container_name: inn-server-a
+    ports:
+      - "119:119"
+      - "563:563"
+    volumes:
+      - ./inn_config:/inn_config
+
+  inn-server-b:
+    image: greenbender/inn
+    hostname: inn-server-b
+    container_name: inn-server-b
+    ports:
+      - "1119:119"
+      - "1563:563"
+    volumes:
+      - ./inn_config:/inn_config
